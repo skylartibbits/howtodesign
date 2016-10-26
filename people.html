@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>How to Design [almost] Anything</title>
+<meta name="description" content="Index Page">
+
+
+<link href="css/style2.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/vendor/modernizr.js"></script>
+
+<script type="text/javascript">
+var pages = new Array(
+["section.Harvard/people/Abdel-Rahman/index.html","Amira Abdel-Rahman"],
+["section.CBA/people/Adjodah/index.html","Dhaval Adjodah"],
+["section.Harvard/people/Akker/index.html","Cameron Akker"],
+["section.EECS/people/Anozie/index.html","Chidi H Anozie"],
+["section.EECS/people/Athalye/index.html","Anish R Athalye"],
+["section.Architecture/people/Bacharidou/index.html","Maroula Bacharidou"],
+["section.CBA/people/Bedri/index.html","Hisham Bedri"],
+["section.EECS/people/Belden/index.html","Sam Belden"],
+["section.CBA/people/Chatterjee/index.html","Pranam Chatterjee"],
+["section.Harvard/people/Chung/index.html","Sophia Chung"],
+["section.CBA/people/Colon-Hernandez/index.html","Pedro Antonio Colon-Hernandez"],
+["section.CBA/people/Copplestone/index.html","Grace Copplestone"],
+["section.CBA/people/Costa/index.html","Allan Costa"],
+["section.CBA/people/Druga/index.html","Stefania Druga"],
+["section.CBA/people/Ekblaw/index.html","Ariel Ekblaw"],
+["section.EECS/people/Eke/index.html","Chika Uzoma Eke"],
+["section.Architecture/people/Freeman/index.html","Charles W Freeman"],
+["section.Harvard/people/Garbarini/index.html","Logan Garbarini"],
+["section.Architecture/people/Ge/index.html","Chunwei Ge"],
+["section.Harvard/people/Geletina/index.html","Olga Geletina"],
+["section.Harvard/people/Glen/index.html","Cody Glen"],
+["section.Harvard/people/Gonczarowski/index.html","Yuval Gonczarowski"],
+["section.Harvard/people/Grotto/index.html","Julia Grotto"],
+["section.Harvard/people/Gulati/index.html","Harnek Gulati"]
+)
+var indices = []
+for (var i = 0; i < pages.length; ++i) indices.push(i)
+function get_time() {
+   if (window.performance != undefined)
+      if (window.performance.now != undefined) {
+         timer = "performance.now"
+         return performance.now()
+         }
+   timer = "Date.now"
+   return Date.now()
+   }
+var t0 = get_time()
+function random_page() {
+   var t = get_time()
+   var seconds = (t-t0)/1000.0
+   var ms = seconds-Math.floor(seconds)
+   index = Math.floor(indices.length * ms)
+   value = indices[index]
+   indices.splice(index,1)
+   if (indices.length == 0) {
+      indices = []
+      for (var i = 0; i < pages.length; ++i) indices.push(i)
+      }
+   //alert(pages[value][0]+" "+ms.toFixed(3)+" "+(value+1)+"/"+pages.length)
+   alert(pages[value][1])
+   window.open(pages[value][0])
+   }
+</script>
+
+</head>
+
+
+
+<body>
+
+<div class="top-border"></div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<header>		
+			<h1><a href="index.html">How to Design [almost] Anything</a></h1>
+			<h2><a href="index.html">4.141/4.142</a></h2>
+			<h2><a href="index.html">Wednesdays 2:00-5:00 Architecture Studios</a></h2>
+		</header>
+	</div>
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<nav>
+			<ul class="inline-list-custom">
+				<li><a href="people.html">People</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>	
+				<li><a href="projects.html">Projects</a></li>	
+				<li><a href="prior.html">Prior Years</a></li>			
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-12 columns">
+
+		<p> <b>Students</b> </p>
+
+		<div style="margin-left:2.5%">
+			<p> <a href="javascript:random_page()">random page</a><br>
+			<br>
+			<script type="text/javascript">
+			for (i = 0; i < pages.length; ++i) {
+			   document.write("<a href="+pages[i][0]+">"+pages[i][1]+"</a><br>")
+			   }
+			</script>
+			</p>
+			<br> <br> 
+		</div>
+
+		<p> <b>Staff</b> </p>
+
+		<div style="margin-left:2.5%">
+		<p>	
+			Jonathan Grinham<br>
+			Justin Lavallee<br>
+			Nathan Melenbrink<br>
+			Skylar Tibbits<br>
+			</p>
+		</div>
+
+	<script>
+	  (function() {
+	    var cx = '007099622167081380328:lvpfpmey7pq';
+	    var gcse = document.createElement('script');
+	    gcse.type = 'text/javascript';
+	    gcse.async = true;
+	    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script>
+<gcse:search></gcse:search>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+			<ul>
+				<li>&copy; 2016 <a href="index.html">How to Design [almost] Anything</a>. All rights reserved.</li>
+				<li><a href="howtodesign.mit.edu"> howtodesign.mit.edu </a></li>			
+			</ul>
+			<div class="social-icons">
+				<a href="http://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+				<a href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/htdaa.js"></script>
+
+
+</body>
+</html>

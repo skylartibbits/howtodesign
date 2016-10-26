@@ -376,7 +376,7 @@ div.lined-list ul {
   letter-spacing: 0;
   text-transform: none;
   list-style-type: none;
-  border-bottom: 1px solid #91b7c7;
+  border-bottom: 0px solid #91b7c7;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   margin-left: 0;
@@ -586,7 +586,7 @@ div div header h2 a:hover, header h2 a:focus {
 /* line 291, ../scss/_custom.scss */
 nav {
   border-top: 0px solid #91b7c7;
-  border-bottom: 1px solid #91b7c7;
+  border-bottom: 0px solid #91b7c7;
   margin-bottom: 3em;
   background-color: #fbfdfe;
 }

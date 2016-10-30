@@ -7,7 +7,10 @@
 <title>How to Design [almost] Anything</title>
 <meta name="description" content="Index Page">
 
-
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
 <link href="../css/style.css" rel="stylesheet">
 <link href="../css/font-awesome.min.css" rel="stylesheet">
 <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=###">
@@ -38,7 +41,9 @@
 	</div>
 </div>
 
-<!--#include file="header.html" -->
+<script> 
+     $(function(){ $("body").load("../header.html") });
+   </script>
 
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
